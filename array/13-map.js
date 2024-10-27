@@ -5,7 +5,9 @@ const usuarios = [
     {edad: 19, nombre: 'Luis'},
 ];
 
-const lista = usuarios.map(u => `<li>${u.nombre}</li>`);
+const lista = usuarios
+    .filter(u => u.edad > 17)
+    .map(u => `<li>${u.nombre}</li>`);
 const html = `<ol>${lista.join('')}</ol>`;
 
 console.log(html);
