@@ -17,11 +17,15 @@
 // user.save();
 
 // Herencia
-User
-Restaurante
-Motociclista
+// User
+// Restaurante
+// Motociclista
 
-function validaENtidad(entidad) {
+// function validaENtidad(entidad) {
 
-    entidad.save();
+//     entidad.save();
+// }
+
+function User() {
+    this.name = 'Hola Mundo';
 }
